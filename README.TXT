@@ -18,6 +18,7 @@ The game will color code which moves are legal
 How to Win
 ====================================
 The game will automatically highlight which moves you can do to make sure you do not stay in check or put yourself in check
+but the game will allow you to make mistakes when switching pieces
 
 >So you just need to corner the king so that there are no legal moves to get out, the game will automatically check this
 and assign the win
