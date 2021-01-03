@@ -1,32 +1,23 @@
-========================
-BUILD OUTPUT DESCRIPTION
-========================
+====================================
+Chess7 changes and features 
+====================================
 
-When you build an Java application project that has a main class, the IDE
-automatically copies all of the JAR
-files on the projects classpath to your projects dist/lib folder. The IDE
-also adds each of the JAR files to the Class-Path element in the application
-JAR files manifest file (MANIFEST.MF).
+The game will color code which moves are legal
 
-To run the project from the command line, go to the dist folder and
-type the following:
+>yellow colors the selected piece
 
-java -jar "Chess.jar" 
+>green colors the open squares the selected piece can go to
 
-To distribute this project, zip up the dist folder (including the lib folder)
-and distribute the ZIP file.
+>red colors the enemy pieces that the selected piece can take
 
-Notes:
+>blue means that the selected piece can switch locations with the enemy piece
 
-* If two JAR files on the project classpath have the same name, only the first
-JAR file is copied to the lib folder.
-* Only JAR files are copied to the lib folder.
-If the classpath contains other types of files or folders, these files (folders)
-are not copied.
-* If a library on the projects classpath also has a Class-Path element
-specified in the manifest,the content of the Class-Path element has to be on
-the projects runtime path.
-* To set a main class in a standard Java project, right-click the project node
-in the Projects window and choose Properties. Then click Run and enter the
-class name in the Main Class field. Alternatively, you can manually type the
-class name in the manifest Main-Class element.
+>pink the selected piece can either switch locations with the piece or take it
+
+====================================
+How to Win
+====================================
+The game will automatically highlight which moves you can do to make sure you do not stay in check or put yourself in check
+
+>So you just need to corner the king so that there are no legal moves to get out, the game will automatically check this
+and assign the win
